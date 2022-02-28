@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            position: relative;
+            border: 1px solid;
+            height: 2000px;
+        }
+        .box{
+            border: 2px solid red;  
+            display: inline-block;
+        }
+        /* static : It is the default position in css */
+        #box1{
+            /* relative: it is relative to its original position. 
+            when element is moved with top, bottom, left, right it moves from its original posotion
+            and creates gap from its original position*/
+            position: relative; 
+
+        }
+        
+        #box2{
+            /* absolute: it is placed relative to its closest parent
+               when element is moved with top, bottom, left, right it moves from 
+               where parents start and does not create any gap in elements.  
+               e.g: left:2px will be from parent container and not from 
+               original position of element.
+            */
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+        #box3{
+            /* fixed : Element is relative to the browser window.
+            */
+            position: fixed;
+            /* top: 0px; */
+            right: 0px;
+            bottom: 50px;
+            padding: 20px;
+            border: 5px solid red;
+        }
+        #box4{
+            /* sticky : Element is sticky when scrolled*/
+            position: sticky;
+            top: 0;
+        }
+        .test{
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent"> 
+        <div class="box" id="box1">Div 1 Realtive</div>
+        <div class="box" id="box2">Div 2 Absolute</div>
+        <div class="box" id="box3">Div 3 Fixed</div>
+        <div class="box" id="box4">Div 4 Sticky</div>
+    </div>
+    <div class="test">x</div>
+</body>
+</html>
