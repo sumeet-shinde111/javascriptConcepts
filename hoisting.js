@@ -6,11 +6,13 @@
 5) The time from memory is assigned to variable till it gets its actual value
    is called temporal dead zone.
  */
+
 var a =10;
 console.log(a);
 
 let b =20;
 console.log(b);
+
 const c =30;
 console.log(c);
 

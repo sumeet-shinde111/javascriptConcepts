@@ -5,42 +5,26 @@ promise object has three states
     2. fulfilled: gives value if successfull
     3. rejected: gives error if rejected
 
+E.g x decided to call y at 10am.
+    1)So x made a promise he will call y at 10am.
+    2)from the time promise made by x till its 10am promise will be 
+      in pending state.
+    3) If x call y at 10am promise will be in successfull state i.e promise fulfilled  
+       will use resolve() to capture result.
+    4) If x does not call y at 10am promise will be in rejected state. 
+       i.e promise rejected will use reject to capture result. 
+    5) So to check status of promise state we consume promise.
+    6) if it is fulfilled capture it in .then()
+    7) if it is rejected capture it in catch(err).
+
 */
-
-// function display(someValue){
-// document.write(someValue);
-// }
-
-// let myPromise = new Promise(function(resolve,reject){
-//     let val = "sumeet";
-//     if(val == "sumeet"){
-//         resolve("yes... corect value "+val);
-
-//     }else{
-//         reject("no... wrong value "+val);
-
-//     }
-// });
-
-// myPromise.then(
-//     function(value){
-//         display(value);
-//     },
-//     function(error){
-//         display(error);
-//     }
-// )
-
-function show(val) {
-  document.write(val);
-}
 
 let mypromise = new Promise((resolve, err) => {
   let no = 12;
   if (no % 2 == 0) {
-    resolve(`<h2>No <i>${no}</i> is Even</h2>`);
+    resolve(`<h2>No <i>${no}</i> is an Even number</h2>`);
   } else {
-    err(`<h2> No is not an Even no</h2>`);
+    err(`<h2> No <i>${no}</i> is not an Even number</h2>`);
   }
 });
 
@@ -50,10 +34,10 @@ mypromise.then((val) => {
     show(err);
   });
   
+  function show(val) {
+    document.write(val);
+  }
 
-
-
-  
 //we can also use finally in promises
 // .finally(()=>{
 //     show("its finally")

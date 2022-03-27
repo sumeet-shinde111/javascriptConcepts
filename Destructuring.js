@@ -1,3 +1,8 @@
+/* 
+we'll make a sandwich. Do you take everything out of the refrigerator
+ to make your sandwich? No, you only take out the items you would like 
+ to use on your sandwich.
+*/
 const details = {
     name:"sumeet",
     rollno:2,

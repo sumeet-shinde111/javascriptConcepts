@@ -35,13 +35,3 @@ function add(){
 }
 add()
 
-
-function a1(){
-    let w= 2;
-    function xx(){
-        console.log(w);
-    }
-    xx();
-
-}
-a1();
