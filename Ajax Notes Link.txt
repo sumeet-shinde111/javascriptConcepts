@@ -1,0 +1,10 @@
+AJAX:
+ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
+ 
+ https://stackoverflow.com/questions/15576548/how-to-pass-parameters-in-get-requests-with-jquery
+ 
+ Put vs POST diff
+ https://stackoverflow.com/questions/107390/whats-the-difference-between-a-post-and-a-put-http-request
+ 
+ delete ion ajax
+ https://www.educba.com/jquery-ajax-delete/

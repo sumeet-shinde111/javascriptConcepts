@@ -20,7 +20,7 @@ const details = {
         console.log("This keyword inside object refers to the owner of the object i.e: details")
         console.log(this);
     },
-    
+
 }
 details.add();
 
