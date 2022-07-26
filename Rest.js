@@ -11,14 +11,15 @@ add(1,2,3,4);
 
 
 //function with rest parameter
-// function addWithRest(...args){
-// let sum = 0;
-// for(let i= 0 ; i <= args.length;i++){
-//     sum += args[i];
-// }
-// console.log(sum);
-// }
-// addWithRest(2,2,2);
+
+ function addWithRest(...args){
+ let sum = 0;
+ for(let i= 0 ; i <= args.length;i++){
+     sum += args[i];
+ }
+ console.log(sum);
+ }
+ addWithRest(2,2,2);
 
 
 
