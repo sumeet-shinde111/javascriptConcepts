@@ -49,10 +49,7 @@ function getDataApi(){
             let parent = document.getElementById("ajaxApiData");
           for(let i = 0 ; i<data.length;i++){
               console.log(data[i].id);
-            
-           
           }
-          
         },
         error:function(err){ 
             document.getElementById("ajaxApiData").innerHTML = err;
