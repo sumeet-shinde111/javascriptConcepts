@@ -1,2 +1,3 @@
 "javascript";
 "typescript";
+"react js";
